@@ -3,9 +3,9 @@ name: Action to run on PRs on Branches
 on:
   pull_request:
     types: [ 'opened', 'reopened' ]
-    branches: [ main', 'otherBranch' ]
-    # paths:
-    #  - 'some-folder/some-file.txt'
+    branches: [ 'main', 'otherBranch' ]
+    paths:
+     - 'some-folder/some-file.txt'
 
 jobs:
   pr_checks:
